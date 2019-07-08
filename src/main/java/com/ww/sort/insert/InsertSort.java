@@ -3,14 +3,14 @@ package com.ww.sort.insert;
 import com.ww.sort.commons.SortUtils;
 
 /**
- * ²åÈëÅÅĞò
+ * æ’å…¥æ’åº
  * @author xiaohua
  *
  */
 public class InsertSort {
 
 	public static void sort(Comparable[] a) {
-		// ½«a[]°´ÉıĞòÅÅĞò
+		// å‡åºæ’åº
 		int N = a.length;
 		
 		for (int i = 1; i < N; i++) {
