@@ -16,6 +16,14 @@ public class BSTree<T extends Comparable<T>> {
             this.left = left;
             this.right = right;
         }
+
+        public T getKey() {
+            return key;
+        }
+    }
+
+    public BSTree() {
+        mRoot = null;
     }
 
     /**
@@ -82,7 +90,7 @@ public class BSTree<T extends Comparable<T>> {
     }
 
     private BSTNode<T> search(BSTNode<T> x, T key) {
-        if (null != x) {
+        if (null == x) {
             return x;
         }
 
@@ -329,5 +337,28 @@ public class BSTree<T extends Comparable<T>> {
             print(tree.left, tree.key, -1);
             print(tree.right,tree.key,  1);
         }
+    }
+
+    /**
+     * 销毁二叉树
+     */
+    public void clear() {
+        destroy(mRoot);
+        mRoot = null;
+    }
+
+    private void destroy(BSTNode<T> tree) {
+        if (null == tree) {
+            return;
+        }
+
+        if (null != tree.left) {
+            destroy(tree.left);
+        }
+        if (null != tree.right) {
+            destroy(tree.right);
+        }
+
+        tree = null;
     }
 }
