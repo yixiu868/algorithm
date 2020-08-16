@@ -29,8 +29,11 @@ public class BubbleSort {
     public static void main(String[] args) {
         int[] arr = { -8, 9, 2, -10, 3, 2, 8, 6, 2, 9, 11, 28, 36, 28, -8, 9, 2, -10, 3, 2, 8, 6, 2, 9, 11, 28, 36, 28 };
 
+        System.out.println("排序前数组:");
         display(arr);
+
         sort(arr);
+        System.out.println("排序后数组");
         display(arr);
     }
 }
