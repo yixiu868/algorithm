@@ -21,7 +21,6 @@ public class SortUtils {
 	}
 	
 	/**
-	 * 测试数组元素是否有序
 	 * @param a
 	 * @return
 	 */
