@@ -12,6 +12,7 @@ public class EdgeWeightedGraph {
 
     private Bag<Edge>[] adj;
 
+    @SuppressWarnings("unchecked")
     public EdgeWeightedGraph(int V) {
         if (V < 0) {
             throw new IllegalArgumentException("Number of vertices must be nonnegative");

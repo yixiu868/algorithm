@@ -22,6 +22,7 @@ public class Bag<Item> implements Iterable<Item> {
         return this.n;
     }
 
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public void add(Item item) {
         Node<Item> oldfirst = this.first;
         this.first = new Node();

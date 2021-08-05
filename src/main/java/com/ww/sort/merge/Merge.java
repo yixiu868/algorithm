@@ -7,13 +7,16 @@ import com.ww.sort.commons.SortUtils;
  */
 public class Merge {
 
+    @SuppressWarnings("rawtypes")
     private static Comparable[] aux; // 归并所需的辅助数组
 
+    @SuppressWarnings("rawtypes")
     public static void sort(Comparable[] a) {
         aux = new Comparable[a.length];
         sort(a, 0, a.length - 1);
     }
 
+    @SuppressWarnings("rawtypes")
     private static void sort(Comparable[] a, int lo, int hi) {
         if (hi <= lo) {
             return;
@@ -25,6 +28,7 @@ public class Merge {
         merge(a, lo, mid, hi); // 归并结果
     }
 
+    @SuppressWarnings("rawtypes")
     public static void merge(Comparable[] a, int lo, int mid, int hi) {
         int i = lo, j = mid + 1;
 

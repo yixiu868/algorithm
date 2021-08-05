@@ -3,7 +3,8 @@ package com.ww.sort.commons;
 @SuppressWarnings("rawtypes")
 public class SortUtils {
 
-	public static boolean less(Comparable v, Comparable w) {
+	@SuppressWarnings("unchecked")
+    public static boolean less(Comparable v, Comparable w) {
 		return v.compareTo(w) < 0;
 	}
 	

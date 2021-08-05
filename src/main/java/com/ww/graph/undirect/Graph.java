@@ -16,6 +16,7 @@ public class Graph {
 
     private Bag<Integer>[] adj; // 邻接表
 
+    @SuppressWarnings("unchecked")
     public Graph(int V) {
         if (V < 0) {
             throw new IllegalArgumentException("Number of vertices must be nonnegative");
@@ -28,6 +29,7 @@ public class Graph {
         }
     }
 
+    @SuppressWarnings("unchecked")
     public Graph(In in) {
         try {
             this.V = in.readInt();

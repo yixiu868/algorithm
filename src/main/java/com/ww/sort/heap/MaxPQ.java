@@ -8,6 +8,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
     private Key[] pq; // 基于堆的完全二叉树
     private int N = 0; // 存储于pq[1..N]中，pq[0]没有使用
 
+    @SuppressWarnings("unchecked")
     public MaxPQ(int maxN) {
         pq = (Key[])new Comparable[maxN+1];
     }

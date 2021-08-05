@@ -12,11 +12,13 @@ public class LinearProbingHashST<Key, Value> {
     private Key[] keys; // 键
     private Value[] vals; // 值
 
+    @SuppressWarnings("unchecked")
     public LinearProbingHashST() {
         keys = (Key[]) new Object[M];
         vals = (Value[]) new Object[M];
     }
 
+    @SuppressWarnings("unchecked")
     public LinearProbingHashST(int cap) {
         keys = (Key[]) new Object[cap];
         vals = (Value[]) new Object[cap];

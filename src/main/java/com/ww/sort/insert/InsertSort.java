@@ -9,7 +9,8 @@ import com.ww.sort.commons.SortUtils;
  */
 public class InsertSort {
 
-	public static void sort(Comparable[] a) {
+	@SuppressWarnings("rawtypes")
+    public static void sort(Comparable[] a) {
 		// 升序排序
 		int N = a.length;
 

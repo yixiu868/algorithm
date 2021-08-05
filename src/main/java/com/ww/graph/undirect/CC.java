@@ -94,6 +94,7 @@ public class CC {
        }
     }
 
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         In in = new In("D:/test/tinyG1.txt");
         Graph G = new Graph(in);

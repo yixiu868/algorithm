@@ -15,6 +15,7 @@ public class SeparateChainingHashST<Key, Value> {
         this(997);
     }
 
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public SeparateChainingHashST(int M) {
         this.M = M; // 创建M条链表
         st = (SequentialSearchST<Key, Value>[]) new SequentialSearchST[M];

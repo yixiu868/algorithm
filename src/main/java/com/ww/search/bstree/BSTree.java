@@ -4,6 +4,7 @@ public class BSTree<T extends Comparable<T>> {
 
     BSTNode<T> mRoot; // 根结点
 
+    @SuppressWarnings("hiding")
     class BSTNode<T extends Comparable<T>> {
         T key;
         BSTNode<T> left; // 左孩子
@@ -272,6 +273,7 @@ public class BSTree<T extends Comparable<T>> {
      * 删除结点
      * @param key
      */
+    @SuppressWarnings("unused")
     public void remove(T key) {
         BSTNode<T> z, node;
 

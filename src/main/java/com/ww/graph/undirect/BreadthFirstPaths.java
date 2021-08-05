@@ -96,6 +96,7 @@ public class BreadthFirstPaths {
         return path;
     }
 
+    @SuppressWarnings("unused")
     private boolean check(Graph G, int s) {
         if (0 != distTo[s]) {
             StdOut.println("distance of source " + s + " to itself = " + distTo[s]);
@@ -136,6 +137,7 @@ public class BreadthFirstPaths {
         return true;
     }
 
+    @SuppressWarnings("unused")
     private void validateVertex(int v) {
         int V = marked.length;
         if (v < 0 || v >= V) {
@@ -143,6 +145,7 @@ public class BreadthFirstPaths {
         }
     }
 
+    @SuppressWarnings("unused")
     private void validateVertices(Iterable<Integer> vertices) {
         if (null == vertices) {
             throw new IllegalArgumentException("argument is null");

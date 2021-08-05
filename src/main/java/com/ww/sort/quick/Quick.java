@@ -8,11 +8,13 @@ import com.ww.sort.commons.SortUtils;
  */
 public class Quick {
 
+    @SuppressWarnings("rawtypes")
     public static void sort(Comparable[] a) {
         StdRandom.shuffle(a);
         sort(a, 0, a.length-1);
     }
 
+    @SuppressWarnings("rawtypes")
     private static void sort(Comparable[] a, int lo, int hi) {
         if (hi <= lo) {
             return;
@@ -22,6 +24,7 @@ public class Quick {
         sort(a, j+1, hi);
     }
 
+    @SuppressWarnings("rawtypes")
     private static int partition(Comparable[] a, int lo, int hi) {
         int i = lo, j = hi + 1;
         Comparable v = a[lo];

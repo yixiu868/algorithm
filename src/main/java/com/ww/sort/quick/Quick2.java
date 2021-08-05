@@ -1,7 +1,6 @@
 package com.ww.sort.quick;
 
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * @author xiaohua

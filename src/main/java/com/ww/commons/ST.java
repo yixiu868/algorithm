@@ -74,6 +74,7 @@ public class ST<Key extends Comparable<Key>, Value> implements Iterable<Key> {
         return st.lastKey();
     }
 
+    @SuppressWarnings("unused")
     public Key ceiling(Key key) {
         if (null == key) {
             throw new IllegalArgumentException("argument to ceiling() is null");
