@@ -1,6 +1,6 @@
 package com.ww.search.hash;
 
-import com.ww.search.SequentialSearchST;
+import com.ww.search.sequential.SequentialSearchST;
 
 /**
  * 基于拉链法的散列表
